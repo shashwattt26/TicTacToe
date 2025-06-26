@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gunmetal: #0a2e36ff;
+  --spring-green: #27fb6bff;
+  --emerald: #14cc60ff;
+  --office-green: #036d19ff;
+  --pigment-green: #09a129ff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--gunmetal);
+  background-image: url(media/img/squiggles_and_doodles_background.jpg);
+}
+
+.box {
+  height: 90%;
+  width: 90%;
+  background-color: var(--emerald);
+  font-family: "Barrio", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+  border-radius: 1.2rem;
+  color: var(--gunmetal);
+  border: 0.1rem solid var(--office-green);
+  box-shadow: 1px 1px 20px 1px #0a2e3656;
+}
+
+.box:hover {
+  transform: scale(1.02);
+  background-color: var(--pigment-green);
+  transition: 0.5s ease;
+}
+
+.btn {
+  font-family: "Barrio", system-ui;
+  font-weight: 500;
+  width: 15vw;
+  font-style: normal;
+  font-size: 2rem;
+  border: none;
+  border-radius: 999px;
+  padding: 2rem;
+  background-color: var(--spring-green);
+  border: 0.1rem solid var(--office-green);
+  box-shadow: 1px 1px 20px 1px #0a2e3659;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  background-color: var(--pigment-green);
+  transition: 0.5s ease;
+}
+
+p {
+  text-align: center;
+  font-size: 4rem;
+  grid-column: span 2;
+  color: var(--spring-green);
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--spring-green);
+}
+
+h3 {
+  font-size: 3rem;
+  color: var(--spring-green);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  max-width: 1000px;
+}
+
+.container {
+  width: 80vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap : 1rem;
+  padding: 2rem;
+  background-color: #0a2e36d8;
+  border-radius: 10rem;
+  box-shadow: 1px 1px 100px 1vh #0a2e3691;
+}
+
+#title {
+  grid-column: span 2;
+  font-size: 6rem;
+}
+
+.main {
+  width: 35vw;
+  height: 46vh;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  justify-self: center;
+  align-self: center;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#reset {
+  justify-self: flex-end;
+}
+
+#newgame {
+  justify-self: flex-start;
+}
+
+.container2 {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  color: wheat;
+  font-size: 5rem;
+  transform: translate(-50%,-50%);
+  height: 40vh;
+  width: 60vw;
+  background-color: #036d18e7;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid var(--office-green);
+  box-shadow: 1px 1px 100px 100vh #0a2e36b4;
+  border-radius: 5rem;
+}
+@media screen and (max-higth: 600px) {
+  html {
+    font-size: 60%;
+  }
+
+  .container {
+
+    height: 90vh;
+    width: auto;
+  }
+
+  .main {
+    width: 250px;
+    height: 250px;
+  }
+
+  .box {
+    width: 90%;
+    height: 100%;
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    width: 10rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  #title {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+
+  .container2 {
+    width: 90vw;
+    height: auto;
+    font-size: 3rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    height: auto;
+    width: 90vw;
+  }
+
+  .main {
+    width: 250px;
+    height: 250px;
+  }
+
+  .box {
+    width: 90%;
+    height: 100%;
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    width: 10rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  #title {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+
+  .container2 {
+    width: 90vw;
+    height: auto;
+    font-size: 3rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .container {
+    height: auto;
+    width: 350px;
+  }
+}
