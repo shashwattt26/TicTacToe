@@ -24,17 +24,17 @@ A fun, responsive, and interactive web-based Tic Tac Toe game built using **HTML
 
 ## 📁 Project Structure
 
-├── index.html          # Main HTML structure
-├── styles.css          # All styles and responsive design
-├── app.js              # Game logic and interactivity
-└── media/
-├── img/
-│   └── squiggles\_and\_doodles\_background.jpg
-└── audio/
-├── mixkit-message-pop-alert-2354.mp3
-├── level-up-05-326133.mp3
-├── mixkit-long-pop-2358.wav
-└── sadwhisle-91469.mp3
+-├── index.html          # Main HTML structure
+-├── styles.css          # All styles and responsive design
+-├── app.js              # Game logic and interactivity
+-└── media/
+-├── img/
+-│   └── squiggles\_and\_doodles\_background.jpg
+-└── audio/
+-├── mixkit-message-pop-alert-2354.mp3
+-├── level-up-05-326133.mp3
+-├── mixkit-long-pop-2358.wav
+-└── sadwhisle-91469.mp3
 
 
 ---
